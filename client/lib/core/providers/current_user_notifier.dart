@@ -1,5 +1,5 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:spotify_clone/features/auth/model/user_model.dart';
+import 'package:spotify_clone/core/models/user_model.dart';
 part 'current_user_notifier.g.dart';
 
 @Riverpod(keepAlive: true)

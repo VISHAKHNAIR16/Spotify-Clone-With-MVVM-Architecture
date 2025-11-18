@@ -6,7 +6,7 @@ import 'package:spotify_clone/core/widgets/loading.dart';
 import 'package:spotify_clone/core/widgets/utils.dart';
 import 'package:spotify_clone/features/auth/view/pages/login_page.dart';
 import 'package:spotify_clone/features/auth/view/widgets/auth_gradient_button.dart';
-import 'package:spotify_clone/features/auth/view/widgets/custom_textfield.dart';
+import 'package:spotify_clone/core/widgets/custom_textfield.dart';
 import 'package:spotify_clone/features/auth/viewmodel/auth_viewmodel.dart';
 
 class SignupPage extends ConsumerStatefulWidget {

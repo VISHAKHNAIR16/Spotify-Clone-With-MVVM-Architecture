@@ -1,7 +1,7 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:spotify_clone/core/providers/current_user_notifier.dart';
-import 'package:spotify_clone/features/auth/model/user_model.dart';
+import 'package:spotify_clone/core/models/user_model.dart';
 import 'package:spotify_clone/features/auth/repositories/auth_local_repository.dart';
 import 'package:spotify_clone/features/auth/repositories/auth_remote_repository.dart';
 part 'auth_viewmodel.g.dart';

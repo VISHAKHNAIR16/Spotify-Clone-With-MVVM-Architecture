@@ -10,7 +10,7 @@ from fastapi import Depends
 from database import get_db
 from sqlalchemy.orm import Session
 import jwt
-
+from sqlalchemy.orm import joinedload
 from pydantic_schemas.user_login import UserLogin
 
 
@@ -72,7 +72,9 @@ def login_user(user: UserLogin,db:Session= Depends(get_db)):
 
 @router.get("/")
 def current_user_data(db: Session = Depends(get_db),user_dict= Depends(auth_middleware)):
-    user = db.query(User).filter(User.id == user_dict['uid']).first()
+    user = db.query(User).filter(User.id == user_dict['uid']).options(
+        joinedload(User.favourites)
+    ).first()
 
     if not user:
         raise HTTPException(404,"User not Found")

@@ -3,7 +3,7 @@ import 'package:fpdart/fpdart.dart';
 import 'package:http/http.dart' as http;
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:spotify_clone/core/constants/server_constants.dart';
-import 'package:spotify_clone/features/auth/model/user_model.dart';
+import 'package:spotify_clone/core/models/user_model.dart';
 import 'package:spotify_clone/features/auth/failure/failure.dart';
 part 'auth_remote_repository.g.dart';
 

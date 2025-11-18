@@ -4,10 +4,10 @@ import 'package:spotify_clone/core/theme/app_pallete.dart';
 import 'package:spotify_clone/core/theme/size_config.dart';
 import 'package:spotify_clone/core/widgets/loading.dart';
 import 'package:spotify_clone/core/widgets/utils.dart';
-import 'package:spotify_clone/features/home/view/home_page.dart';
+import 'package:spotify_clone/features/home/view/pages/home_page.dart';
 import 'package:spotify_clone/features/auth/view/pages/signup_page.dart';
 import 'package:spotify_clone/features/auth/view/widgets/auth_gradient_button.dart';
-import 'package:spotify_clone/features/auth/view/widgets/custom_textfield.dart';
+import 'package:spotify_clone/core/widgets/custom_textfield.dart';
 import 'package:spotify_clone/features/auth/viewmodel/auth_viewmodel.dart';
 
 class LoginPage extends ConsumerStatefulWidget {
